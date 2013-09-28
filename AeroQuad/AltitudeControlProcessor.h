@@ -108,7 +108,7 @@ void processAltitudeHold()
         #endif
       }
     }
-    throttle = altitudeHoldThrottle + altitudeHoldThrottleCorrection + zDampeningThrottleCorrection;
+    throttle = altitudeHoldThrottleCorrection + altitudeHoldThrottle + zDampeningThrottleCorrection;
   }
   else {
     throttle = receiverCommand[THROTTLE];
